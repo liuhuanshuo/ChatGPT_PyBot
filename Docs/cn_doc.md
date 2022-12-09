@@ -1,10 +1,8 @@
-## ChatGPT_PyBot
+# 使用说明
 
+ChatGPT_PyBot 是一个基于 Python 开发的命令行机器人。
 
-
-## 使用说明
-
-若要使用`ChatGPT_PyBot`，你需要拥有一个openai账号，且在一台可以正常登录到`ChatGPT`网页版的机器上进行。
+若要使用`ChatGPT_PyBot`，**你需要拥有一个openai账号，且在一台可以正常登录到`ChatGPT`网页版的机器上进行**。
 
 ## 安装
 
@@ -41,7 +39,7 @@ pip install git+https://github.com/liuhuanshuo/ChatGPT_PyBot
 
 注意：如果你在`openai`所不支持的地区使用账号密码，需要配置终端走代理流量，否则会无法验证。
 
-你可以使用如下代码检查你的终端ip地址
+你可以使用如下代码检查你的终端ip地址已确保终端的ip属于可用区域
 
 ```shell
 curl cip.cc
@@ -49,7 +47,7 @@ curl cip.cc
 
 ### 使用Cookie
 
-如果你在`openai`所不支持的地区使用账号密码方式，即使使用代理终端，可以依旧会无法验证，这时可以使用第二种方式。
+如果上面的配置方案没有作用，这时可以使用第二种方式，别担心，一点也不困难。
 
 首先需要登录ChatGPT，并按下F12或者 右键 - 检查
 
@@ -92,3 +90,9 @@ $ chatgpt your question
 ```
 
 ![](https://pic.liuzaoqi.com/picgo/202212091119492.png)
+
+
+
+## 致谢
+
+本项目从[ChatGPT - 一个OpenAI 的逆向工程]( https://github.com/acheong08/ChatGPT)中得到灵感。
