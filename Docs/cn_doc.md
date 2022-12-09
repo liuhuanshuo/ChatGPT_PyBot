@@ -93,6 +93,13 @@ $ chatgpt your question
 
 
 
+## 待办
+
+- [ ] 更好的登陆方式（现在的确实有点繁琐，但这很有难度）
+- [ ] 刷新对话、重置对话
+
+
+
 ## 致谢
 
 本项目从[ChatGPT - 一个OpenAI 的逆向工程]( https://github.com/acheong08/ChatGPT)中得到灵感。

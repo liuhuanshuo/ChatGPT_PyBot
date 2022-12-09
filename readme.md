@@ -89,6 +89,15 @@ $ chatgpt your question
 
 ![](https://pic.liuzaoqi.com/picgo/202212091119492.png)
 
+
+
+## TO DO
+
+- [ ] Better way to log in (Now this is a little cumbersome, but it's a little difficult to implement a new approach)
+- [ ] Refresh the session and reset the session
+
+
+
 ## Acknowledgments
 
 This project is inspired by [ChatGPT - A reverse engineering of OpenAI]( https://github.com/acheong08/ChatGPT)

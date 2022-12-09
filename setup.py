@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-with open("README.md", "r", encoding="utf-8") as fh:
+with open("readme.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
@@ -9,7 +9,7 @@ setup(
     license="GNU General Public License v2.0",
     author="Liuhuanshuo",
     author_email="huanshuo080l@gmail.com",
-    description="A simple Python class for interacting with OpenAI's chatGPT",
+    description="A Python based ChatGPT robot that can be used in the command line",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/liuhuanshuo/ChatGPT_PyBot",
