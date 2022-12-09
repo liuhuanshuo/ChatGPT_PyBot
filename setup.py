@@ -5,14 +5,14 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="ChatGPT_PyBot",
-    version="0.2",
+    version="0.2.1",
     license="GNU General Public License v2.0",
     author="Liuhuanshuo",
     author_email="huanshuo080l@gmail.com",
     description="A simple Python class for interacting with OpenAI's chatGPT",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/liuhuanshuo",
+    url="https://github.com/liuhuanshuo/ChatGPT_PyBot",
     packages=find_packages(),
     install_requires=[
         "rich",
@@ -21,7 +21,6 @@ setup(
     ],
     classifiers=[
         "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
     python_requires=">=3.7",
