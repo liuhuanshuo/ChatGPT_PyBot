@@ -285,9 +285,8 @@ class ChatBot:
 
 
 class GPTShell(cmd.Cmd):
-    # intro = "Provide a prompt for ChatGPT, or type help or ? to list commands."
-    prompt = "You: "
 
+    prompt = "You: "
     chatbot = None
 
     def _print_output(self, output):
@@ -295,9 +294,7 @@ class GPTShell(cmd.Cmd):
         print("")
 
     def do_clear(self, _):
-        "`clear` starts a new conversation, chatgpt will lose all conversational context."
-        # self.chatgpt.parent_message_id = str(uuid.uuid4())
-        # self.chatgpt.conversation_id = None
+        #Features to be perfected
         self._print_output('* Conversation cleared')
 
     def default(self, line):
@@ -309,7 +306,6 @@ class GPTShell(cmd.Cmd):
         self._print_output(response)
 
     def do_session(self, _):
-        "`session` refreshes your session information"
         self.chatbot.refresh_session()
         self._print_output('* Session refreshed')
 
@@ -338,7 +334,6 @@ def main():
         print("To start ChatGPT, make sure to include the file config.json in the current directory!")
         exit()
 
-    # print("To start ChatGPT, make sure to include the file config.json in the current directory!")
     print("Logging in...")
     print("")
     try:

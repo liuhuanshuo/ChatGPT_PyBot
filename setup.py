@@ -5,11 +5,11 @@ from setuptools import setup, find_packages
 
 setup(
     name="ChatGPT_PyBot",
-    version="0.3",
+    version="0.4",
     license="GNU General Public License v2.0",
     author="Liuhuanshuo",
     author_email="huanshuo080l@gmail.com",
-    description="A Python based ChatGPT robot that can be used in the command line",
+    description="A Python based ChatGPT robot",
     long_description=open("readme.md", encoding="utf-8").read(),
     long_description_content_type="text/markdown",
     url="https://github.com/liuhuanshuo/ChatGPT_PyBot",
