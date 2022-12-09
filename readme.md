@@ -125,3 +125,6 @@ If you need to call ChatGPT in Python, you can do something like this
 
 This project is inspired by [ChatGPT - A reverse engineering of OpenAI]( https://github.com/acheong08/ChatGPT)
 
+### Disclaimer:
+
+***ChatGPT-PyBot is in no way associated with, endorsed by, or otherwise affiliated with OpenAI.***

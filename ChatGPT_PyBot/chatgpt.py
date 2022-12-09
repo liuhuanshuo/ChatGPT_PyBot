@@ -2,10 +2,12 @@ import sys
 import cmd
 import requests
 import json
+import os
 import uuid
 from rich.console import Console
 from rich.markdown import Markdown
 from OpenAIAuth.OpenAIAuth import OpenAIAuth, Debugger
+
 
 console = Console()
 BASE_URL = "https://chat.openai.com/"
@@ -316,6 +318,13 @@ class GPTShell(cmd.Cmd):
 
 def main():
 
+    file_list = os.listdir(os.getcwd())
+    if 'config.json' not in file_list:
+        print("config.json not found in current directory!")
+        print("Please read the configuration instructions at https://github.com/liuhuanshuo/ChatGPT_PyBot")
+        print("And make sure that config.json file is available in the current directory!")
+        exit()
+
     with open("config.json", encoding="utf-8") as f:
         config = json.load(f)
     if "--debug" in sys.argv:
@@ -329,11 +338,16 @@ def main():
         print("To start ChatGPT, make sure to include the file config.json in the current directory!")
         exit()
 
-    print("To start ChatGPT, make sure to include the file config.json in the current directory!")
+    # print("To start ChatGPT, make sure to include the file config.json in the current directory!")
     print("Logging in...")
     print("")
-    chatbot = ChatBot(config, debug=debug)
-
+    try:
+        chatbot = ChatBot(config, debug=debug)
+    except:
+        print("Error when logging in to OpenAI. Please check the configuration information in config.json is valid.")
+        print("If you are using an account password for verification, make sure your terminal can access OpenAI, otherwise, use session_token!")
+        print("More configuration instructions, please refer to https://github.com/liuhuanshuo/ChatGPT_PyBot!")
+        exit()
 
     if len(sys.argv) > 1 and not help_tips:
         response = chatbot.get_chat_response(" ".join(sys.argv[1:]))["message"]

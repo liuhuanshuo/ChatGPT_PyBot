@@ -1,16 +1,16 @@
 from setuptools import setup, find_packages
 
-with open("readme.md", "r", encoding="utf-8") as fh:
-    long_description = fh.read()
+# with open("readme.md", "r", encoding="utf-8") as fh:
+#     long_description = fh.read()
 
 setup(
     name="ChatGPT_PyBot",
-    version="0.2.1",
+    version="0.3",
     license="GNU General Public License v2.0",
     author="Liuhuanshuo",
     author_email="huanshuo080l@gmail.com",
     description="A Python based ChatGPT robot that can be used in the command line",
-    long_description=long_description,
+    long_description=open("readme.md", encoding="utf-8").read(),
     long_description_content_type="text/markdown",
     url="https://github.com/liuhuanshuo/ChatGPT_PyBot",
     packages=find_packages(),
