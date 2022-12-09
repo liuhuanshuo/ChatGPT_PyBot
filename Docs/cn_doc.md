@@ -1,5 +1,7 @@
 # 使用说明
 
+![](https://pic.liuzaoqi.com/picgo/202212091444750.png)
+
 ChatGPT_PyBot 是一个基于 Python 开发的命令行机器人。
 
 若要使用`ChatGPT_PyBot`，**你需要拥有一个openai账号，且在一台可以正常登录到`ChatGPT`网页版的机器上进行**。
@@ -90,6 +92,31 @@ $ chatgpt your question
 ```
 
 ![](https://pic.liuzaoqi.com/picgo/202212091119492.png)
+
+
+
+## Python使用
+
+
+
+如果需要在Python中调用ChatGPT，可以类似执行如下代码
+
+```python
+>>> from ChatGPT_PyBot import ChatBot
+>>> config = {
+    "session_token":"Your token"
+    				or
+    "email": "<YOUR_EMAIL>",
+    "password": "<YOUR_PASSWORD>"
+}
+>>> chatbot = ChatBot(config, conversation_id=None)
+>>> chatbot.get_chat_response('hello world')["message"]
+
+
+'''
+"Hello there! It's nice to meet you. Is there anything I can help you with today? I'm here to answer any questions you might have."
+'''
+```
 
 
 

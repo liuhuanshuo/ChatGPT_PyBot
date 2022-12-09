@@ -2,6 +2,8 @@
 
 <p align="center"><a href="https://github.com/liuhuanshuo/ChatGPT_PyBot">En</a>|<a href="https://github.com/liuhuanshuo/ChatGPT_PyBot/blob/main/Docs/cn_doc.md">Cn</a></p>
 
+![](https://pic.liuzaoqi.com/picgo/202212091444750.png)
+
 ## Usage
 
 ChatGPT_PyBot is a command-line robot developed in Python.
@@ -88,6 +90,27 @@ $ chatgpt your question
 ```
 
 ![](https://pic.liuzaoqi.com/picgo/202212091119492.png)
+
+## Python Usage
+
+If you need to call ChatGPT in Python, you can do something like this
+
+```python
+>>> from ChatGPT_PyBot import ChatBot
+>>> config = {
+    "session_token":"Your token"
+    				or
+    "email": "<YOUR_EMAIL>",
+    "password": "<YOUR_PASSWORD>"
+}
+>>> chatbot = ChatBot(config, conversation_id=None)
+>>> chatbot.get_chat_response('hello world')["message"]
+
+
+'''
+"Hello there! It's nice to meet you. Is there anything I can help you with today? I'm here to answer any questions you might have."
+'''
+```
 
 
 
